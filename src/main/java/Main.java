@@ -1,16 +1,11 @@
 
 import org.apache.http.HttpHost;
-import org.apache.http.auth.AuthScope;
-import org.apache.http.auth.UsernamePasswordCredentials;
-import org.apache.http.client.CredentialsProvider;
+
 import org.apache.http.client.config.RequestConfig;
-import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
-import org.telegram.telegrambots.meta.ApiContext;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.telegram.telegrambots.meta.generics.LongPollingBot;
 
 public class Main {
     private static String BOT_NAME = "example_kuzin_bot";
@@ -26,15 +21,15 @@ public class Main {
 //        botOptions.setProxyPort(9150);
 //        botOptions.setProxyType(DefaultBotOptions.ProxyType.SOCKS5);
         // HTTP
-        System.setProperty("http.proxyHost", "http://proxy.memorynotfound.com");
-        System.setProperty("http.proxyPort", "80");
-        System.setProperty("http.nonProxyHosts", "localhost|127.0.0.1");
+//        System.setProperty("http.proxyHost", "http://proxy.memorynotfound.com");
+//        System.setProperty("http.proxyPort", "80");
+//        System.setProperty("http.nonProxyHosts", "localhost|127.0.0.1");
 //        // HTTPS
 //        System.setProperty("https.proxyHost", "https://proxy.memorynotfound.com");
 //        System.setProperty("https.proxyPort", "443");
 
 
-        try {
+       // try {
 
             ApiContextInitializer.init();
 
@@ -43,7 +38,7 @@ public class Main {
 
            //  Set up Http proxy
             //DefaultBotOptions botOptions = ApiContext.getInstance(DefaultBotOptions.class);
-            DefaultBotOptions botOptions = new DefaultBotOptions();
+           // DefaultBotOptions botOptions = new DefaultBotOptions();
 
            // CredentialsProvider credsProvider = new BasicCredentialsProvider();
 //            credsProvider.setCredentials(
@@ -53,13 +48,13 @@ public class Main {
             HttpHost httpHost = new HttpHost(PROXY_HOST);
 
             RequestConfig requestConfig = RequestConfig.custom().setProxy(httpHost).setAuthenticationEnabled(true).build();
-            botOptions.setRequestConfig(requestConfig);
-            botOptions.setProxyHost(PROXY_HOST);
-            botOptions.setProxyPort(Integer.parseInt(PROXY_PORT));
-            botsApi.registerBot(new Bot2(BOT_TOKEN, BOT_NAME, botOptions));
-        } catch (TelegramApiException e) {
-            e.printStackTrace();
-        }
+//            botOptions.setRequestConfig(requestConfig);
+//            botOptions.setProxyHost(PROXY_HOST);
+//            botOptions.setProxyPort(Integer.parseInt(PROXY_PORT));
+//            botsApi.registerBot(new Bot2(BOT_TOKEN, BOT_NAME, botOptions));
+//        } catch (TelegramApiException e) {
+//            e.printStackTrace();
+//        }
     }
 
 }
