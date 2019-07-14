@@ -3,9 +3,7 @@ import org.apache.http.HttpHost;
 
 import org.apache.http.client.config.RequestConfig;
 import org.telegram.telegrambots.ApiContextInitializer;
-import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class Main {
     private static String BOT_NAME = "example_kuzin_bot";

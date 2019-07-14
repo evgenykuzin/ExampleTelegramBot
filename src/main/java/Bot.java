@@ -1,3 +1,4 @@
+import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.AnswerCallbackQuery;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -17,6 +18,11 @@ import java.util.logging.Level;
 import static org.telegram.telegrambots.meta.logging.BotLogger.log;
 
 public class Bot extends TelegramLongPollingBot {
+
+    public Bot(DefaultBotOptions options){
+        super(options);
+    }
+    public Bot(){}
 
     @Override
     public void onUpdateReceived(Update update) {
