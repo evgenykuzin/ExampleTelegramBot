@@ -3,7 +3,9 @@ import org.apache.http.HttpHost;
 
 import org.apache.http.client.config.RequestConfig;
 import org.telegram.telegrambots.ApiContextInitializer;
+import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class Main {
     private static String BOT_NAME = "example_kuzin_bot";
@@ -23,11 +25,11 @@ public class Main {
 //        System.setProperty("http.proxyPort", "80");
 //        System.setProperty("http.nonProxyHosts", "localhost|127.0.0.1");
 //        // HTTPS
-//        System.setProperty("https.proxyHost", "https://proxy.memorynotfound.com");
-//        System.setProperty("https.proxyPort", "443");
+        System.setProperty("https.proxyHost", "https://proxy.memorynotfound.com");
+        System.setProperty("https.proxyPort", "443");
 
 
-       // try {
+        try {
 
             ApiContextInitializer.init();
 
@@ -35,8 +37,8 @@ public class Main {
             TelegramBotsApi botsApi = new TelegramBotsApi();
 
            //  Set up Http proxy
-            //DefaultBotOptions botOptions = ApiContext.getInstance(DefaultBotOptions.class);
-           // DefaultBotOptions botOptions = new DefaultBotOptions();
+           // DefaultBotOptions botOptions = ApiContext.getInstance(DefaultBotOptions.class);
+            DefaultBotOptions botOptions = new DefaultBotOptions();
 
            // CredentialsProvider credsProvider = new BasicCredentialsProvider();
 //            credsProvider.setCredentials(
@@ -46,13 +48,13 @@ public class Main {
             HttpHost httpHost = new HttpHost(PROXY_HOST);
 
             RequestConfig requestConfig = RequestConfig.custom().setProxy(httpHost).setAuthenticationEnabled(true).build();
-//            botOptions.setRequestConfig(requestConfig);
-//            botOptions.setProxyHost(PROXY_HOST);
-//            botOptions.setProxyPort(Integer.parseInt(PROXY_PORT));
-//            botsApi.registerBot(new Bot2(BOT_TOKEN, BOT_NAME, botOptions));
-//        } catch (TelegramApiException e) {
-//            e.printStackTrace();
-//        }
+            botOptions.setRequestConfig(requestConfig);
+            botOptions.setProxyHost(PROXY_HOST);
+            botOptions.setProxyPort(Integer.parseInt(PROXY_PORT));
+            botsApi.registerBot(new Bot2(BOT_TOKEN, BOT_NAME, botOptions));
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+        }
     }
 
 }
