@@ -3,7 +3,7 @@ package bots_variants;
 import org.telegram.abilitybots.api.bot.AbilityBot;
 import org.telegram.abilitybots.api.objects.Ability;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
-import org.telegram.telegrambots.meta.api.methods.send.SendVoice;
+import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.List;
@@ -42,8 +42,12 @@ public class BotAbility extends AbilityBot {
     @Override
     public void onUpdatesReceived(List<Update> updates) {
         System.out.println(updates.get(0).getMessage().toString());
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setText("");
+        sendMessage.setChatId(updates.get(0).getMessage().getChatId());
         try {
-            execute(new SendVoice());
+            sayHelloWorld();
+            execute(sendMessage);
         } catch (TelegramApiException tae) {
             tae.printStackTrace();
         }

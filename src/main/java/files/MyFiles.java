@@ -1,9 +1,14 @@
 package files;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
-public class Files {
+public class MyFiles {
     public static String resources;
 
     static {
@@ -48,10 +53,38 @@ public class Files {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try {
+            bufferedReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return arrayList;
     }
 
-    public static int fileLinesCount(String folder){
+    public static void deleteString(String string, String folder) {
+        try {
+            Path input = Paths.get(folder);
+            Path temp = Files.createTempFile("temp", ".txt");
+            Stream<String> lines = Files.lines(input);
+            try (BufferedWriter writer = Files.newBufferedWriter(temp)) {
+                lines
+                        .filter(line -> !line.contains(string))
+                        .forEach(line -> {
+                            try {
+                                writer.write(line);
+                                writer.newLine();
+                            } catch (IOException e) {
+                                throw new RuntimeException(e);
+                            }
+                        });
+            }
+            Files.move(temp, input, StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+        public static int fileLinesCount(String folder){
         return readFile(folder).size();
     }
 

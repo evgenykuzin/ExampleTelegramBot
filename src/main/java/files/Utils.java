@@ -1,15 +1,11 @@
 package files;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.function.Supplier;
-import java.util.logging.FileHandler;
 
 import org.telegram.telegrambots.facilities.filedownloader.TelegramFileDownloader;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.telegram.telegrambots.meta.api.objects.stickers.Sticker;
+
 import static constants.R.BOT_TOKEN;
 
 public class Utils {
@@ -23,7 +19,7 @@ public class Utils {
        });
 
         try {
-           output = loader.downloadFile(Files.file1.getAbsolutePath());
+           output = loader.downloadFile(MyFiles.file1.getAbsolutePath());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
