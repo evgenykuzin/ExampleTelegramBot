@@ -4,7 +4,6 @@ import commands.Buttons;
 import commands.Command;
 import commands.CommandManager;
 import database.DatabaseManager;
-import files.MyFiles;
 import files.Stickers;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -27,13 +26,14 @@ import org.telegram.telegrambots.meta.api.objects.stickers.Sticker;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import utilites.Entry;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Blob;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
-
-import static constants.R.BOT_TOKEN;
-import static constants.R.BOT_USERNAME;
+import java.util.Objects;
+import java.util.Properties;
 
 public class Bot extends TelegramLongPollingBot implements AbstractBot {
 
@@ -41,6 +41,9 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
     private Buttons buttons;
     private ArrayList<String> stickers;
     private static String EVGENY_KUZIN_ID = "328018558";
+    private Properties botProps;
+    private String botName;
+    private String botToken;
 
     public Bot(DefaultBotOptions options) {
         super(options);
@@ -49,11 +52,27 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
     public Bot() {
         // setButtons(new SendMessage());
         // setInline();
+        loadProps();
+        System.out.println(botName);
         commandManager = new CommandManager(this);
         buttons = new Buttons();
         buttons.createUserKeyboard(commandManager);
         stickers = new ArrayList<>();
         System.out.println("bot run!");
+    }
+
+    private void loadProps() {
+        try {
+            String rootPath = Objects.requireNonNull(Thread.currentThread().getContextClassLoader().getResource("")).getPath();
+            String appConfigPath = rootPath + "properties/bot.properties";
+            botProps = new Properties();
+            botProps.load(new FileInputStream(appConfigPath));
+            botName = botProps.getProperty("bot.name");
+            botToken = botProps.getProperty("bot.token");
+        }
+        catch(IOException ioe) {
+            ioe.printStackTrace();
+        }
     }
 
     @Override
@@ -254,12 +273,12 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
 
     @Override
     public String getBotUsername() {
-        return BOT_USERNAME;
+        return botName;
     }
 
     @Override
     public String getBotToken() {
-        return BOT_TOKEN;
+        return botToken;
     }
 
     @Override
@@ -268,4 +287,5 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
         execute(sendMessage);
         return null;
     }
+
 }
