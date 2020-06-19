@@ -1,36 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseMemesImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseStickersImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseVideosImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/files/resources/img/ricardo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/files/resources/proxy/formated_proxy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/files/resources/proxy/unformated_proxy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilites/Entry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilites/MigrateToDatabaseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilites/StickerEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilites/proxy/Proxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilites/proxy/ProxyFileFormater.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilites/proxy/ProxyUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bots_variants/BotAbility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bots_variants/BotAbility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/files/Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/MyFiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/files/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/files/resources/img/images.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/resources/img/images.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/files/resources/stickers/ywy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/resources/stickers/ywy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/files/resources/videos/vid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/resources/videos/vid.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="deploy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +39,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy" />
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\resources" />
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot\src\main\java\files\resources\img" />
     </key>
   </component>
@@ -108,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562060071864</updated>
-      <workItem from="1592517326286" duration="293000" />
+      <workItem from="1592517326286" duration="4206000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -152,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582306245505</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="deploy">
+      <created>1592517694795</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1592517694795</updated>
+    </task>
+    <task id="LOCAL-00008" summary="deploy">
+      <created>1592519625673</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1592519625673</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +163,38 @@
     <MESSAGE value="botoptionns fix" />
     <MESSAGE value="change bot api" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="380" y="0" width="619" height="728" key="#App" timestamp="1592517626714">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="380" y="0" width="619" height="728" key="#App/0.0.1366.728@0.0.1366.728" timestamp="1592517626714" />
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592519624548">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592519624548" />
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592521152299">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592521152299" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592521152299">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592521152299" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592521152299">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592521152299" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592521152299">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592521152299" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592519630545">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592519630545" />
   </component>
   <component name="masterDetails">
     <states>
