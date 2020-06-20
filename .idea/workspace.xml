@@ -6,48 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ExampleTelegramBot_deploy_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/documents/IMG_2148.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/ExampleTelegramBot_deploy.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/bots_variants/AbstractBot.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/bots_variants/Bot$1CountObj.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/bots_variants/Bot.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/commands/Buttons.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/commands/Command$ActionSetter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/commands/Command$SendMessageActionSetter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/commands/Command.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/database/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/database/DatabaseManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/database/DatabaseMemesImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/database/DatabaseStickersImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/database/DatabaseVideosImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/files/Images.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/files/MyFiles.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/files/Stickers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/files/Utils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/properties/bot.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/utilites/BotNull.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/utilites/Entry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/utilites/MigrateToDatabaseUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/utilites/StickerEntry.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/utilites/proxy/Proxy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/utilites/proxy/ProxyFileFormaterKt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/utilites/proxy/ProxyUtil.class" afterDir="false" />
+    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="fix pom.xml : change name of Main class for workerBot.&#10;fix path to uploaded documents.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/files/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,14 +60,15 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\java" />
-      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\resources" />
-      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot\src\main\java\files\resources\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy" />
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\resources\documents" />
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\java" />
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\resources" />
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot\src\main\java\files\resources\img" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
@@ -159,7 +121,7 @@
       <updated>1562060071864</updated>
       <workItem from="1592517326286" duration="5014000" />
       <workItem from="1592562750974" duration="1688000" />
-      <workItem from="1592573292303" duration="14120000" />
+      <workItem from="1592573292303" duration="16342000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -224,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592553592311</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix pom.xml : change name of Main class for workerBot.&#10;fix path to uploaded documents.">
+      <created>1592659928403</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1592659928404</updated>
+    </task>
+    <task id="LOCAL-00011" summary="pom.xml : fix mojo plugin">
+      <created>1592661498474</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1592661498474</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +216,9 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="deploy" />
     <MESSAGE value="change procfile dyno" />
-    <option name="LAST_COMMIT_MESSAGE" value="change procfile dyno" />
+    <MESSAGE value="fix pom.xml : change name of Main class for workerBot.&#10;fix path to uploaded documents." />
+    <MESSAGE value="pom.xml : fix mojo plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml : fix mojo plugin" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="0" width="619" height="728" key="#App" timestamp="1592517626714">
@@ -267,10 +245,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592562808803" />
-    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592553591565">
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592661497309">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592553591565" />
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592661497309" />
+    <state x="129" y="55" key="DiffContextDialog" timestamp="1592660085890">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="55" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1592660085890" />
     <state x="550" y="114" key="EnvironmentVariablesDialog" timestamp="1592563303134">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -291,13 +273,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592655484855" />
+    <state x="571" y="232" width="389" height="264" key="MultipleFileMergeDialog" timestamp="1592659962847">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="571" y="232" width="389" height="264" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1592659962847" />
+    <state x="349" y="84" key="RollbackChangesDialog" timestamp="1592660041676">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="349" y="84" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592660041676" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1592562887179">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592562887179" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592553599346">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592661500408">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592553599346" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592661500408" />
   </component>
 </project>
