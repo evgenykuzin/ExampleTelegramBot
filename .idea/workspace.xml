@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="fix pom.xml : change name of Main class for workerBot.&#10;fix path to uploaded documents.">
+    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="change workerBot to webBot&#10;change Procfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,7 @@
       <updated>1562060071864</updated>
       <workItem from="1592517326286" duration="5014000" />
       <workItem from="1592562750974" duration="1688000" />
-      <workItem from="1592573292303" duration="16342000" />
+      <workItem from="1592573292303" duration="19131000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -200,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592661498474</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="change Procfile">
+      <created>1592664684175</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1592664684175</updated>
+    </task>
+    <task id="LOCAL-00013" summary="change workerBot to webBot&#10;change Procfile">
+      <created>1592670843602</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592670843602</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +232,9 @@
     <MESSAGE value="change procfile dyno" />
     <MESSAGE value="fix pom.xml : change name of Main class for workerBot.&#10;fix path to uploaded documents." />
     <MESSAGE value="pom.xml : fix mojo plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml : fix mojo plugin" />
+    <MESSAGE value="change Procfile" />
+    <MESSAGE value="change workerBot to webBot&#10;change Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="change workerBot to webBot&#10;change Procfile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="0" width="619" height="728" key="#App" timestamp="1592517626714">
@@ -245,10 +261,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592562808803" />
-    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592661497309">
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592670842673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592661497309" />
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592670842673" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1592660085890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -257,22 +273,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="550" y="114" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592563303134" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592655484855">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1592665502806">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592655484855" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592655484855">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592665502806" />
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592666687522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592655484855" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592655484855">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592666687522" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592666687521">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592655484855" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592655484855">
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592666687521" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592666687519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592655484855" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592666687519" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592666687521">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592666687521" />
     <state x="571" y="232" width="389" height="264" key="MultipleFileMergeDialog" timestamp="1592659962847">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -281,13 +301,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="349" y="84" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592660041676" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1592562887179">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1592671415667">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592562887179" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592661500408">
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592671415667" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592670845791">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592661500408" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592670845791" />
   </component>
 </project>
