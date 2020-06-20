@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ExampleTelegramBot_deploy:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="deploy">
+    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ExampleTelegramBot_deploy_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/documents/IMG_2148.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/ExampleTelegramBot_deploy.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/bots_variants/AbstractBot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/bots_variants/Bot$1CountObj.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/bots_variants/Bot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/commands/Buttons.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/commands/Command$ActionSetter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/commands/Command$SendMessageActionSetter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/commands/Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/database/Database.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/database/DatabaseManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/database/DatabaseMemesImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/database/DatabaseStickersImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/database/DatabaseVideosImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/files/Images.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/files/MyFiles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/files/Stickers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/files/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/properties/bot.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utilites/BotNull.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utilites/Entry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utilites/MigrateToDatabaseUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utilites/StickerEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utilites/proxy/Proxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utilites/proxy/ProxyFileFormaterKt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/utilites/proxy/ProxyUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/files/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/files/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +73,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dVjnxQ5vedi3okN7NkF5biBaDq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -45,19 +93,20 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\java" />
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\resources" />
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot\src\main\java\files\resources\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy" />
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\resources" />
-      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot\src\main\java\files\resources\img" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
@@ -75,9 +124,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExampleTelegramBot_deploy.jar (1)" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/ExampleTelegramBot_deploy_jar/ExampleTelegramBot_deploy.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleTelegramBot_deploy.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/ExampleTelegramBot_deploy_jar/tgbot.jar" />
+      <option name="WORKING_DIRECTORY" value="$MAVEN_REPOSITORY$" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs>
+        <env name="botName" value="" />
+        <env name="botToken" value="" />
+      </envs>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JAR Application.ExampleTelegramBot_deploy.jar (1)" />
+        <item itemvalue="JAR Application.ExampleTelegramBot_deploy.jar" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -92,7 +157,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562060071864</updated>
-      <workItem from="1592517326286" duration="4206000" />
+      <workItem from="1592517326286" duration="5014000" />
+      <workItem from="1592562750974" duration="1688000" />
+      <workItem from="1592573292303" duration="14120000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -150,13 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592519625673</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="change procfile dyno">
+      <created>1592553592311</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1592553592311</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="procfile" />
     <MESSAGE value="fix imports" />
     <MESSAGE value="procfile web proc added" />
@@ -164,112 +239,65 @@
     <MESSAGE value="change bot api" />
     <MESSAGE value="first commit" />
     <MESSAGE value="deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy" />
+    <MESSAGE value="change procfile dyno" />
+    <option name="LAST_COMMIT_MESSAGE" value="change procfile dyno" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="0" width="619" height="728" key="#App" timestamp="1592517626714">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="380" y="0" width="619" height="728" key="#App/0.0.1366.728@0.0.1366.728" timestamp="1592517626714" />
-    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592519624548">
+    <state x="462" y="169" key="#BuildArtifactsBeforeRunChooser" timestamp="1592563599083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592519624548" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592521152299">
+    <state x="462" y="169" key="#BuildArtifactsBeforeRunChooser/0.0.1366.728@0.0.1366.728" timestamp="1592563599083" />
+    <state x="392" y="0" key="#ExampleTelegramBot_deploy.jar" timestamp="1592563600790">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592521152299" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592521152299">
+    <state x="392" y="0" key="#ExampleTelegramBot_deploy.jar/0.0.1366.728@0.0.1366.728" timestamp="1592563600790" />
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592655451481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592521152299" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592521152299">
+    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1592655451481" />
+    <state x="462" y="69" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1592563243462">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592521152299" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592521152299">
+    <state x="462" y="69" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728@0.0.1366.728" timestamp="1592563243462" />
+    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592562808803">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592521152299" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592519630545">
+    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592562808803" />
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592553591565">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592519630545" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>ExampleTelegramBot</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592553591565" />
+    <state x="550" y="114" key="EnvironmentVariablesDialog" timestamp="1592563303134">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="550" y="114" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592563303134" />
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592655484855">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592655484855" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592655484855">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592655484855" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592655484855">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592655484855" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592655484855">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592655484855" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1592562887179">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592562887179" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592553599346">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592553599346" />
   </component>
 </project>

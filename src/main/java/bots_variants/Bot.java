@@ -4,7 +4,7 @@ import commands.Buttons;
 import commands.Command;
 import commands.CommandManager;
 import database.DatabaseManager;
-import files.Stickers;
+import files.Utils;
 import org.telegram.telegrambots.bots.DefaultBotOptions;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.AnswerCallbackQuery;
@@ -13,10 +13,7 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.methods.send.SendSticker;
 import org.telegram.telegrambots.meta.api.methods.send.SendVideo;
-import org.telegram.telegrambots.meta.api.objects.Message;
-import org.telegram.telegrambots.meta.api.objects.PhotoSize;
-import org.telegram.telegrambots.meta.api.objects.Update;
-import org.telegram.telegrambots.meta.api.objects.Video;
+import org.telegram.telegrambots.meta.api.objects.*;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
@@ -26,8 +23,11 @@ import org.telegram.telegrambots.meta.api.objects.stickers.Sticker;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import utilites.Entry;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.sql.Blob;
 import java.sql.Date;
 import java.util.ArrayList;
@@ -50,14 +50,11 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
     }
 
     public Bot() {
-        // setButtons(new SendMessage());
-        // setInline();
         loadProps();
         System.out.println(botName);
         commandManager = new CommandManager(this);
         buttons = new Buttons();
         buttons.createUserKeyboard(commandManager);
-        stickers = new ArrayList<>();
         System.out.println("bot run!");
     }
 
@@ -69,49 +66,65 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
             botProps.load(new FileInputStream(appConfigPath));
             botName = botProps.getProperty("bot.name");
             botToken = botProps.getProperty("bot.token");
-        }
-        catch(IOException ioe) {
+        } catch (IOException ioe) {
             ioe.printStackTrace();
         }
     }
 
-    @Override
-    public void onUpdateReceived(Update update) {
-        Message message = update.getMessage();
-        String userName = message.getFrom().getUserName();
-        if (message.hasText()) {
-            System.out.println("userName : '" + userName + "' write : '" + message.getText() + "'");
-            if (message.getText().equals("del")) {
-                String folder = "C:\\Users\\JekaJops\\IntelliJIDEAProjects\\ExampleTelegramBot\\src\\main\\java\\files\\resources\\img\\images.txt";
-                //MyFiles.deleteString(commandManager.flashPhoto, folder);
-                DatabaseManager.deleteMeme(commandManager.flashPhoto);
-                sendMsg(message, "Спасибо! мем удален.");
+    private void onFile(Message message, String userName) {
+        class CountObj {
+            private int symb = 0;
+            private int words = 0;
+
+            public int getSymb() {
+                return symb;
             }
 
+            public void incSymb(int c) {
+                symb += c;
+            }
+
+            public int getWords() {
+                return words;
+            }
+
+            public void incWords(int c) {
+                words += c;
+            }
         }
-        if (message.hasSticker()) {
-            Sticker sticker = message.getSticker();
-            Blob blob = null;
-            DatabaseManager.addStickerEntry(new Entry(
-                    sticker.getFileId(),
-                    userName,
-                    "t.me//" +userName,
-                    new Date(message.getDate()),
-                    blob,
-                    String.valueOf(message.getChatId())
-            ));
-            System.out.println(userName + " added sticker");
-            SendSticker sendSticker = new SendSticker();
-            sendSticker.setChatId(EVGENY_KUZIN_ID);
-            sendSticker.setSticker(sticker.getFileId());
+        CountObj countObj = new CountObj();
+        if (message.hasDocument()) {
+            Document document = message.getDocument();
+            String filePath = document.getFileName();
+            String url = "https://api.telegram.org/bot" + botToken + "/getFile?file_id=" + document.getFileId();
+            //File file = Utils.loadFileFromInternet(url, new File(filePath));
+            File file = null;
             try {
-                sendMsg(Long.parseLong(EVGENY_KUZIN_ID), "User " + userName + " send this:");
-                execute(sendSticker);
-            } catch (TelegramApiException e) {
+                file = Utils.loadFileFromInternet(document.getFileName(), document.getFileId(), botToken);
+            } catch (IOException e) {
                 e.printStackTrace();
             }
-
+            Path path = file.toPath();
+            List<String> lines = null;
+            try {
+                lines = Files.readAllLines(path);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            assert lines != null;
+            StringBuilder sp = new StringBuilder();
+            lines.forEach(sp::append);
+            System.out.println(sp.toString());
+            lines.forEach(s -> {
+                countObj.incSymb(s.replace(" ", "").length());
+                countObj.incWords(s.split(" ").length);
+            });
+            String text = "символов: " + countObj.getSymb() + "\nслов: " + countObj.getWords();
+            sendText(message.getChatId(), text, null);
         }
+    }
+
+    private void onPhoto(Message message, String userName) {
         if (message.hasPhoto()) {
             List<PhotoSize> photoSet = message.getPhoto();
             for (PhotoSize photo : photoSet) {
@@ -119,7 +132,7 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
                 DatabaseManager.addMemeEntry(new Entry(
                         photo.getFileId(),
                         userName,
-                        "t.me//" +userName,
+                        "t.me//" + userName,
                         new Date(message.getDate()),
                         blob,
                         String.valueOf(message.getChatId())
@@ -129,21 +142,49 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
                 sendPhoto.setChatId(EVGENY_KUZIN_ID);
                 sendPhoto.setPhoto(photo.getFileId());
                 try {
-                    sendMsg(Long.parseLong(EVGENY_KUZIN_ID), "User " + userName + " send this:");
+                    sendText(Long.parseLong(EVGENY_KUZIN_ID), "User " + userName + " send this:", null);
                     execute(sendPhoto);
                 } catch (TelegramApiException e) {
                     e.printStackTrace();
                 }
             }
         }
+    }
 
+    private void onSticker(Message message, String userName) {
+        if (message.hasSticker()) {
+            Sticker sticker = message.getSticker();
+            Blob blob = null;
+            DatabaseManager.addStickerEntry(new Entry(
+                    sticker.getFileId(),
+                    userName,
+                    "t.me//" + userName,
+                    new Date(message.getDate()),
+                    blob,
+                    String.valueOf(message.getChatId())
+            ));
+            System.out.println(userName + " added sticker");
+            SendSticker sendSticker = new SendSticker();
+            sendSticker.setChatId(EVGENY_KUZIN_ID);
+            sendSticker.setSticker(sticker.getFileId());
+            try {
+                sendText(Long.parseLong(EVGENY_KUZIN_ID), "User " + userName + " send this:", null);
+                execute(sendSticker);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
+
+    private void onVideo(Message message, String userName) {
         if (message.hasVideo()) {
             Video video = message.getVideo();
             Blob blob = null;
             DatabaseManager.addVideoEntry(new Entry(
                     video.getFileId(),
                     userName,
-                    "t.me//" +userName,
+                    "t.me//" + userName,
                     new Date(message.getDate()),
                     blob,
                     String.valueOf(message.getChatId())
@@ -153,33 +194,46 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
             sendVideo.setChatId(EVGENY_KUZIN_ID);
             sendVideo.setVideo(video.getFileId());
             try {
-                sendMsg(Long.parseLong(EVGENY_KUZIN_ID), "User " + userName + " send this:");
+                sendText(Long.parseLong(EVGENY_KUZIN_ID), "User " + userName + " send this:", null);
                 execute(sendVideo);
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }
         }
+    }
 
-        SendMessage sendButtons = new SendMessage();
-        sendButtons.setChatId(message.getChatId().
-                toString());
-        sendButtons.setReplyMarkup(buttons.getReplyKeyboard());
-        sendButtons.setText(".");
+    private void onText(Message message, String userName) {
+        if (message.hasText()) {
+            System.out.println("userName : '" + userName + "' write : '" + message.getText() + "'");
+            if (message.getText().equals("del")) {
+                DatabaseManager.deleteMeme(commandManager.flashPhoto);
+                sendText(message.getChatId(), "Спасибо! мем удален.", null);
+            }
+        }
+    }
+
+    @Override
+    public void onUpdateReceived(Update update) {
+        Message message = update.getMessage();
+        String userName = message.getFrom().getUserName();
+        onFile(message, userName);
+        onText(message, userName);
+        onSticker(message, userName);
+        onPhoto(message, userName);
+        onVideo(message, userName);
         try {
             if (message.hasText()) {
                 if (message.getText().contains("start")) {
                     System.out.println(userName + " connected.");
-                    sendMsg(message, "wellcome, " + userName + "!");
-                    execute(sendButtons);
+                    sendText(message.getChatId(), "wellcome, " + userName + "!", null);
+                    sendText(message.getChatId(), CommandManager.HELP_TEXT, null);
                 }
                 for (Command command : commandManager.getCommands()) {
                     if (command.isName(message.getText())) {
                         execute(command.action(message));
-                        execute(sendButtons);
                     }
                 }
             }
-
         } catch (
                 TelegramApiException e) {
             e.printStackTrace();
@@ -187,70 +241,61 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
 
     }
 
-    public synchronized void sendMsg(long chatId, String s) {
+    public synchronized void sendText(long chatId, String s, Buttons buttons) {
+        if (buttons == null) buttons = this.buttons;
         SendMessage sendMessage = new SendMessage();
         sendMessage.enableMarkdown(true);
         sendMessage.setChatId(chatId);
+        sendMessage.setReplyMarkup(buttons.getReplyKeyboard());
         sendMessage.setText(s);
         try {
             execute(sendMessage);
         } catch (TelegramApiException e) {
+            e.printStackTrace();
             //log(Level.SEVERE, "Exception: ", e.toString());
         }
     }
 
-    public synchronized void sendMsg(Message message, String s) {
-        sendMsg(message.getChatId(), s);
-    }
-
-    public synchronized void sendSticker(Message message, int id) {
+    public synchronized void sendSticker(long chatId, String sticker, Buttons buttons) {
+        if (buttons == null) buttons = this.buttons;
         SendSticker sendSticker = new SendSticker();
-        sendSticker.setChatId(message.getChatId().toString());
-        sendSticker.setSticker(Stickers.sticker1);
+        sendSticker.setChatId(chatId);
+        sendSticker.setReplyMarkup(buttons.getReplyKeyboard());
+        sendSticker.setSticker(sticker);
         try {
             execute(sendSticker);
         } catch (TelegramApiException e) {
+            e.printStackTrace();
             //log(Level.SEVERE, "Exception: ", e.toString());
         }
     }
 
-    public static synchronized ReplyKeyboardMarkup getButtons() {
-        // Создаем клавиуатуру
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        replyKeyboardMarkup.setSelective(true);
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        replyKeyboardMarkup.setOneTimeKeyboard(true);
+    public synchronized void sendPhoto(long chatId, String photo, Buttons buttons) {
+        if (buttons == null) buttons = this.buttons;
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setReplyMarkup(buttons.getReplyKeyboard());
+        sendPhoto.setPhoto(photo);
+        try {
+            execute(sendPhoto);
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+            //log(Level.SEVERE, "Exception: ", e.toString());
+        }
+    }
 
-        // Создаем список строк клавиатуры
-        List<KeyboardRow> keyboard = new ArrayList<>();
-
-        // Первая строчка клавиатуры
-        KeyboardRow keyboardFirstRow = new KeyboardRow();
-        // Добавляем кнопки в первую строчку клавиатуры
-        KeyboardButton hellowBtn = new KeyboardButton("Привет");
-
-        keyboardFirstRow.add(hellowBtn);
-
-        // Вторая строчка клавиатуры
-        KeyboardRow keyboardSecondRow = new KeyboardRow();
-        // Добавляем кнопки во вторую строчку клавиатуры
-        KeyboardButton helpBtn = new KeyboardButton("Помощь");
-        keyboardSecondRow.add(helpBtn);
-
-        // Вторая строчка клавиатуры
-        KeyboardRow keyboardThirdRow = new KeyboardRow();
-        // Добавляем кнопки во вторую строчку клавиатуры
-        KeyboardButton fuckBtn = new KeyboardButton("иди нахуй");
-        keyboardThirdRow.add(fuckBtn);
-
-        // Добавляем все строчки клавиатуры в список
-        keyboard.add(keyboardThirdRow);
-        keyboard.add(keyboardFirstRow);
-        keyboard.add(keyboardSecondRow);
-
-        // и устанваливаем этот список нашей клавиатуре
-        replyKeyboardMarkup.setKeyboard(keyboard);
-        return replyKeyboardMarkup;
+    public synchronized void sendVideo(long chatId, String video, Buttons buttons) {
+        if (buttons == null) buttons = this.buttons;
+        SendVideo sendVideo = new SendVideo();
+        sendVideo.setChatId(chatId);
+        sendVideo.setReplyMarkup(buttons.getReplyKeyboard());
+        sendVideo.setVideo(video);
+        try {
+            execute(sendVideo);
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+            //log(Level.SEVERE, "Exception: ", e.toString());
+        }
     }
 
     private void setInline() {
