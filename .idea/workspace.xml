@@ -7,8 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +126,7 @@
       <updated>1562060071864</updated>
       <workItem from="1592517326286" duration="5014000" />
       <workItem from="1592562750974" duration="1688000" />
-      <workItem from="1592573292303" duration="27722000" />
+      <workItem from="1592573292303" duration="28419000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -269,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592732578553</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="props fix">
+      <created>1592733021583</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1592733021583</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,10 +330,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592691216646" />
-    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592732576130">
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592733021024">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592732576130" />
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592733021024" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1592660085890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -368,9 +374,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592732254958" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592732580492">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592733027177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592732580492" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592733027177" />
   </component>
 </project>
