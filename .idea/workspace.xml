@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +54,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.35517243" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -71,7 +72,7 @@
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot\src\main\java\files\resources\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JAR Application.ExampleTelegramBot-1.0-SNAPSHOT.jar">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="ExampleTelegramBot_deploy" />
@@ -92,34 +93,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ExampleTelegramBot" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="ExampleTelegramBot-1.0-SNAPSHOT.jar (1)" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/repo/JJ/ExampleTelegramBot/1.0-SNAPSHOT/ExampleTelegramBot-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExampleTelegramBot-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/ExampleTelegramBot-1.0-SNAPSHOT.jar" />
+      <method v="2" />
     </configuration>
     <configuration name="ExampleTelegramBot_deploy.jar (1)" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/ExampleTelegramBot_deploy_jar/ExampleTelegramBot_deploy.jar" />
       <method v="2" />
     </configuration>
-    <configuration name="ExampleTelegramBot_deploy.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/ExampleTelegramBot_deploy_jar/tgbot.jar" />
-      <option name="WORKING_DIRECTORY" value="$MAVEN_REPOSITORY$" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <envs>
-        <env name="botName" value="" />
-        <env name="botToken" value="" />
-      </envs>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.ExampleTelegramBot-1.0-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.ExampleTelegramBot_deploy.jar (1)" />
+        <item itemvalue="JAR Application.ExampleTelegramBot-1.0-SNAPSHOT.jar (1)" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.Heart" />
-        <item itemvalue="JAR Application.ExampleTelegramBot_deploy.jar (1)" />
-        <item itemvalue="JAR Application.ExampleTelegramBot_deploy.jar" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +127,7 @@
       <updated>1562060071864</updated>
       <workItem from="1592517326286" duration="5014000" />
       <workItem from="1592562750974" duration="1688000" />
-      <workItem from="1592573292303" duration="26438000" />
+      <workItem from="1592573292303" duration="27186000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -256,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592731425273</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add new worker">
+      <created>1592731735226</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1592731735226</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,10 +309,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592691216646" />
-    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592731423258">
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592731734585">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592731423258" />
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592731734585" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1592660085890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -326,22 +325,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592665502806" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592731103953">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592732077103">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592731103953" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592731103953">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592732077103" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592732077103">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592731103953" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592731103952">
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592732077103" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592732077103">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592731103952" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592731103953">
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592732077103" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592732077103">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592731103953" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592732077103" />
     <state x="571" y="232" width="389" height="264" key="MultipleFileMergeDialog" timestamp="1592659962847">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -350,13 +349,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="349" y="84" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592660041676" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1592691268548">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1592732254958">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592691268548" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592731428561">
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592732254958" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592731740958">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592731428561" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592731740958" />
   </component>
 </project>

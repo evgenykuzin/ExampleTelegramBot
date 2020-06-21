@@ -66,8 +66,10 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
             botProps.load(new FileInputStream(appConfigPath));
             botName = botProps.getProperty("bot.name");
             botToken = botProps.getProperty("bot.token");
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+            botName = "example_kuzin_bot";
+            botToken = "828485060:AAFX2dLbpFzchsyufap_rrQEGKQVMsjjptQ";
         }
     }
 
