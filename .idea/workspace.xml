@@ -6,9 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="change workerBot to webBot&#10;change Procfile">
+    <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="3:31....">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ExampleTelegramBot_deploy_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -65,6 +66,7 @@
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\target" />
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\resources\documents" />
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\java" />
       <recent name="C:\Users\JekaJops\IntelliJIDEAProjects\ExampleTelegramBot_deploy\src\main\resources" />
@@ -75,6 +77,19 @@
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="ExampleTelegramBot_deploy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Heart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bots_variants.Heart" />
+      <module name="ExampleTelegramBot_deploy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bots_variants.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,6 +118,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.Heart" />
         <item itemvalue="JAR Application.ExampleTelegramBot_deploy.jar (1)" />
         <item itemvalue="JAR Application.ExampleTelegramBot_deploy.jar" />
         <item itemvalue="Application.Main" />
@@ -121,7 +137,7 @@
       <updated>1562060071864</updated>
       <workItem from="1592517326286" duration="5014000" />
       <workItem from="1592562750974" duration="1688000" />
-      <workItem from="1592573292303" duration="19131000" />
+      <workItem from="1592573292303" duration="25806000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -214,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592670843602</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="delete jar file">
+      <created>1592671446209</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1592671446209</updated>
+    </task>
+    <task id="LOCAL-00015" summary="3:31....">
+      <created>1592692299809</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1592692299809</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +264,9 @@
     <MESSAGE value="pom.xml : fix mojo plugin" />
     <MESSAGE value="change Procfile" />
     <MESSAGE value="change workerBot to webBot&#10;change Procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="change workerBot to webBot&#10;change Procfile" />
+    <MESSAGE value="delete jar file" />
+    <MESSAGE value="3:31...." />
+    <option name="LAST_COMMIT_MESSAGE" value="3:31...." />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="0" width="619" height="728" key="#App" timestamp="1592517626714">
@@ -249,6 +281,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="0" key="#ExampleTelegramBot_deploy.jar/0.0.1366.728@0.0.1366.728" timestamp="1592563600790" />
+    <state x="392" y="0" key="#ExampleTelegramBot_deploy.jar_(1)" timestamp="1592691458600">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="392" y="0" key="#ExampleTelegramBot_deploy.jar_(1)/0.0.1366.728@0.0.1366.728" timestamp="1592691458600" />
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592655451481">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -257,14 +293,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="69" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728@0.0.1366.728" timestamp="1592563243462" />
-    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592562808803">
+    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592691216646">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592562808803" />
-    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592670842673">
+    <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592691216646" />
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592692339053">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592670842673" />
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592692339053" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1592660085890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -277,22 +313,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592665502806" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592666687522">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592691145177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592666687522" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592666687521">
+    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592691145177" />
+    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592691145177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592666687521" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592666687519">
+    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592691145177" />
+    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592691145177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592666687519" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592666687521">
+    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592691145177" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592691145177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592666687521" />
+    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592691145177" />
     <state x="571" y="232" width="389" height="264" key="MultipleFileMergeDialog" timestamp="1592659962847">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -301,13 +337,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="349" y="84" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592660041676" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1592671415667">
+    <state x="163" y="0" key="SettingsEditor" timestamp="1592691268548">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592671415667" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592670845791">
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592691268548" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592692303035">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592670845791" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592692303035" />
   </component>
 </project>
