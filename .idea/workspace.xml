@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
       <updated>1562060071864</updated>
       <workItem from="1592517326286" duration="5014000" />
       <workItem from="1592562750974" duration="1688000" />
-      <workItem from="1592573292303" duration="28419000" />
+      <workItem from="1592573292303" duration="29086000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -275,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592733021583</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="test heroku. ignore.">
+      <created>1592737157842</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1592737157842</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +306,8 @@
     <MESSAGE value="3:31...." />
     <MESSAGE value="add new worker" />
     <MESSAGE value="props fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="props fix" />
+    <MESSAGE value="test heroku. ignore." />
+    <option name="LAST_COMMIT_MESSAGE" value="test heroku. ignore." />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="0" width="619" height="728" key="#App" timestamp="1592517626714">
@@ -330,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592691216646" />
-    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592733021024">
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592737157108">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592733021024" />
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592737157108" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1592660085890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -374,9 +382,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592732254958" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592733027177">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592737159525">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592733027177" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592737159525" />
   </component>
 </project>
