@@ -7,26 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ExampleTelegramBot_deploy_jar/ExampleTelegramBot_deploy.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ExampleTelegramBot_deploy_jar/ExampleTelegramBot_deploy.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseMemesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseMemesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseStickersImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseStickersImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseVideosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseVideosImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bots_variants/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bots_variants/Bot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/CommandManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/CommandManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/CommandManager$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/DatabaseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/DatabaseMemesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/DatabaseMemesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/DatabaseStickersImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/DatabaseStickersImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database/DatabaseVideosImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/DatabaseVideosImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +126,7 @@
       <updated>1562060071864</updated>
       <workItem from="1592517326286" duration="5014000" />
       <workItem from="1592562750974" duration="1688000" />
-      <workItem from="1592573292303" duration="36553000" />
+      <workItem from="1592573292303" duration="37191000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -308,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592738168806</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="database fix2">
+      <created>1592826515726</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1592826515726</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +322,8 @@
     <MESSAGE value="props fix" />
     <MESSAGE value="test heroku. ignore." />
     <MESSAGE value="database fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="database fix" />
+    <MESSAGE value="database fix2" />
+    <option name="LAST_COMMIT_MESSAGE" value="database fix2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="0" width="619" height="728" key="#App" timestamp="1592517626714">
@@ -369,10 +358,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592691216646" />
-    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592738168215">
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592826511242">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592738168215" />
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592826511242" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1592660085890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -413,10 +402,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592732254958" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592738170415">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592826518956">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592738170415" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592826518956" />
     <state x="526" y="105" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1592740317534">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
