@@ -20,7 +20,7 @@ public class DatabaseStickersImpl implements Database{
         Date date = (Date) objects[3];
         Blob blob = (Blob) objects[4];
         PreparedStatement s = conn.prepareStatement(
-                "insert into stickers (file_id, " +
+                "insert into heroku_7f0a8e6802ba731.stickers (file_id, " +
                         "author_name, " +
                         "author_link, " +
                         "msg_date, " +
@@ -52,15 +52,22 @@ public class DatabaseStickersImpl implements Database{
     @Override
     public ResultSet select(int id) throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("select * from stickers where id = ?");
+                conn.prepareStatement("select * from heroku_7f0a8e6802ba731.stickers where id = ?");
         statement.setInt(1, id);
+        return statement.executeQuery();
+    }
+
+    @Override
+    public ResultSet selectRandom() throws SQLException {
+        PreparedStatement statement =
+                conn.prepareStatement("SELECT * FROM heroku_7f0a8e6802ba731.stickers ORDER BY RAND() LIMIT 1;");
         return statement.executeQuery();
     }
 
     @Override
     public ResultSet selectAll() throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("select * from stickers");
+                conn.prepareStatement("select * from heroku_7f0a8e6802ba731.stickers");
         return statement.executeQuery();    }
 
     @Override
@@ -70,7 +77,7 @@ public class DatabaseStickersImpl implements Database{
 
     public void delete(int id) throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("delete from stickers where id = ?");
+                conn.prepareStatement("delete from heroku_7f0a8e6802ba731.stickers where id = ?");
         statement.setInt(1, id);
         statement.executeUpdate();
     }
@@ -78,7 +85,7 @@ public class DatabaseStickersImpl implements Database{
     @Override
     public void delete(String fileID) throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("delete from stickers where file_id = ?");
+                conn.prepareStatement("delete from heroku_7f0a8e6802ba731.stickers where file_id = ?");
         statement.setString(1, fileID);
         statement.executeUpdate();
     }
@@ -86,7 +93,7 @@ public class DatabaseStickersImpl implements Database{
     @Override
     public int count() throws SQLException {
         ResultSet resultSet =
-                conn.createStatement().executeQuery("SELECT count(file_id) FROM stickers");
+                conn.createStatement().executeQuery("SELECT count(id) FROM heroku_7f0a8e6802ba731.stickers");
         resultSet.next();
         return resultSet.getInt(1);
     }

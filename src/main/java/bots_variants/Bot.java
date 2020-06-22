@@ -217,7 +217,6 @@ public class Bot extends TelegramLongPollingBot implements AbstractBot {
     @Override
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
-        sendText(message.getChatId(), "test heroku server", null);
         String userName = message.getFrom().getUserName();
         onFile(message, userName);
         onText(message, userName);

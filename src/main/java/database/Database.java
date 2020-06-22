@@ -8,7 +8,7 @@ public interface Database {
         String url = "jdbc:mysql://b6fb2f3f67ee5b:62546e31@us-cdbr-east-05.cleardb.net/heroku_7f0a8e6802ba731?reconnect=true";
         String name = "b6fb2f3f67ee5b";
         String pass = "62546e31";
-        Class.forName("com.mysql.jdbc.Driver");
+        Class.forName("com.mysql.cj.jdbc.Driver");
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url, name, pass);
@@ -29,6 +29,8 @@ public interface Database {
     void insertBlob(Blob blob) throws SQLException;
 
     ResultSet select(int id) throws SQLException;
+
+    ResultSet selectRandom() throws SQLException;
 
     ResultSet selectAll() throws SQLException;
 

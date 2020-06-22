@@ -32,8 +32,9 @@ public class CommandManager {
         addCommand(new Command("random_meme", new Command.ActionSetter() {
             @Override
             public BotApiMethod action(Message message) {
+
                 int randInt = new Random().nextInt(DatabaseManager.countMemes());
-                String image = DatabaseManager.getMemeEntry(randInt).getFileId();
+                String image = DatabaseManager.getRandomMemesEntry().getFileId();
                 bot.sendPhoto(message.getChatId(), image, null);
                 return new BotNull();
             }
@@ -43,7 +44,7 @@ public class CommandManager {
             @Override
             public BotApiMethod action(Message message) {
                 int randInt = new Random().nextInt(DatabaseManager.countVideos());
-                String video = DatabaseManager.getVideoEntry(randInt).getFileId();
+                String video = DatabaseManager.getRandomVideosEntry().getFileId();
                 bot.sendVideo(message.getChatId(), video, null);
                 return new BotNull();
             }
@@ -53,7 +54,7 @@ public class CommandManager {
             @Override
             public BotApiMethod action(Message message) {
                 int randInt = new Random().nextInt(DatabaseManager.countStickers());
-                String sticker = DatabaseManager.getStickerEntry(randInt).getFileId();
+                String sticker = DatabaseManager.getRandomStickersEntry().getFileId();
                 bot.sendSticker(message.getChatId(), sticker, null);
                 return new BotNull();
             }

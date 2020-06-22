@@ -115,6 +115,40 @@ public class DatabaseManager {
         return entry;
     }
 
+    public static Entry getRandomMemesEntry() {
+        ResultSet resultSet;
+        Entry entry = null;
+        try {
+            resultSet = databaseMemes.selectRandom();
+            entry = getEntry(resultSet);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return entry;
+    }
+    public static Entry getRandomVideosEntry() {
+        ResultSet resultSet;
+        Entry entry = null;
+        try {
+            resultSet = databaseVideos.selectRandom();
+            entry = getEntry(resultSet);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return entry;
+    }
+    public static Entry getRandomStickersEntry() {
+        ResultSet resultSet;
+        Entry entry = null;
+        try {
+            resultSet = databaseStickers.selectRandom();
+            entry = getEntry(resultSet);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return entry;
+    }
+
     public static void deleteMeme(String fileId) {
         try {
             databaseMemes.delete(fileId);
@@ -125,7 +159,12 @@ public class DatabaseManager {
 
     public static int countMemes() {
         try {
-            return databaseMemes.count();
+            int count = databaseMemes.count();
+            if (count >= 0) {
+                return count;
+            } else {
+                throw new IllegalArgumentException("No items in memes. count is negative.");
+            }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -134,7 +173,12 @@ public class DatabaseManager {
 
     public static int countStickers() {
         try {
-            return databaseStickers.count();
+            int count = databaseStickers.count();
+            if (count >= 0) {
+                return count;
+            } else {
+                throw new IllegalArgumentException("No items in stickers. count is negative.");
+            }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -143,11 +187,20 @@ public class DatabaseManager {
 
     public static int countVideos() {
         try {
-            return databaseVideos.count();
+            int count = databaseVideos.count();
+            if (count >= 0) {
+                return count;
+            } else {
+                throw new IllegalArgumentException("No items in videos. count is negative.");
+            }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
         return 0;
+    }
+
+    public void getRandomId() {
+
     }
 
 }

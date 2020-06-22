@@ -7,7 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9233eb4-f09f-4c69-80ae-e6b980a92e45" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ExampleTelegramBot_deploy_jar/ExampleTelegramBot_deploy.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ExampleTelegramBot_deploy_jar/ExampleTelegramBot_deploy.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bots_variants/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CommandManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseMemesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseMemesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseStickersImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseStickersImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseVideosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseVideosImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bots_variants/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bots_variants/Bot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/CommandManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/CommandManager$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/CommandManager$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/CommandManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/commands/CommandManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/DatabaseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/DatabaseMemesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/DatabaseMemesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/DatabaseStickersImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/DatabaseStickersImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/database/DatabaseVideosImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database/DatabaseVideosImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Heart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bots_variants.Heart" />
+    <configuration name="MigrateToDatabaseUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utilites.MigrateToDatabaseUtil" />
       <module name="ExampleTelegramBot_deploy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bots_variants.*" />
+          <option name="PATTERN" value="utilites.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.MigrateToDatabaseUtil" />
         <item itemvalue="JAR Application.ExampleTelegramBot-1.0-SNAPSHOT.jar" />
         <item itemvalue="JAR Application.ExampleTelegramBot_deploy.jar (1)" />
         <item itemvalue="JAR Application.ExampleTelegramBot-1.0-SNAPSHOT.jar (1)" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.Heart" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +145,7 @@
       <updated>1562060071864</updated>
       <workItem from="1592517326286" duration="5014000" />
       <workItem from="1592562750974" duration="1688000" />
-      <workItem from="1592573292303" duration="29086000" />
+      <workItem from="1592573292303" duration="36553000" />
     </task>
     <task id="LOCAL-00001" summary="procfile">
       <created>1563108567400</created>
@@ -282,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592737157842</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="database fix">
+      <created>1592738168806</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1592738168806</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +333,8 @@
     <MESSAGE value="add new worker" />
     <MESSAGE value="props fix" />
     <MESSAGE value="test heroku. ignore." />
-    <option name="LAST_COMMIT_MESSAGE" value="test heroku. ignore." />
+    <MESSAGE value="database fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="database fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="380" y="0" width="619" height="728" key="#App" timestamp="1592517626714">
@@ -326,22 +353,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="392" y="0" key="#ExampleTelegramBot_deploy.jar_(1)/0.0.1366.728@0.0.1366.728" timestamp="1592691458600" />
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592655451481">
+    <state x="550" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592739823908">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1592655451481" />
+    <state x="550" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1592739823908" />
     <state x="462" y="69" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1592563243462">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="69" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728@0.0.1366.728" timestamp="1592563243462" />
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1592825683604">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1592825683604" />
     <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592691216646">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="154" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1592691216646" />
-    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592737157108">
+    <state x="200" y="0" key="CommitChangelistDialog2" timestamp="1592738168215">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592737157108" />
+    <state x="200" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1592738168215" />
     <state x="129" y="55" key="DiffContextDialog" timestamp="1592660085890">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -354,22 +385,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592665502806" />
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom" timestamp="1592732593069">
+    <state width="905" height="179" key="GridCell.Tab.0.bottom" timestamp="1592826297768">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592732593069" />
-    <state width="1323" height="169" key="GridCell.Tab.0.center" timestamp="1592732593069">
+    <state width="905" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592826297768" />
+    <state width="905" height="179" key="GridCell.Tab.0.center" timestamp="1592826297767">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592732593069" />
-    <state width="1323" height="169" key="GridCell.Tab.0.left" timestamp="1592732593069">
+    <state width="905" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592826297767" />
+    <state width="905" height="179" key="GridCell.Tab.0.left" timestamp="1592826297767">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592732593069" />
-    <state width="1323" height="169" key="GridCell.Tab.0.right" timestamp="1592732593069">
+    <state width="905" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592826297767" />
+    <state width="905" height="179" key="GridCell.Tab.0.right" timestamp="1592826297767">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="169" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592732593069" />
+    <state width="905" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592826297767" />
     <state x="571" y="232" width="389" height="264" key="MultipleFileMergeDialog" timestamp="1592659962847">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -382,9 +413,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592732254958" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592737159525">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1592738170415">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592737159525" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592738170415" />
+    <state x="526" y="105" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1592740317534">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="526" y="105" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1592740317534" />
   </component>
 </project>

@@ -21,7 +21,7 @@ public class DatabaseVideosImpl implements Database{
         Date date = (Date) objects[3];
         Blob blob = (Blob) objects[4];
         PreparedStatement s = conn.prepareStatement(
-                "insert into videos (file_id, " +
+                "insert into heroku_7f0a8e6802ba731.videos (file_id, " +
                         "author_name, " +
                         "author_link, " +
                         "msg_date, " +
@@ -53,16 +53,24 @@ public class DatabaseVideosImpl implements Database{
     @Override
     public ResultSet select(int id) throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("select * from videos where id = ?");
+                conn.prepareStatement("select * from heroku_7f0a8e6802ba731.videos where id = ?");
         statement.setInt(1, id);
+        return statement.executeQuery();
+    }
+
+    @Override
+    public ResultSet selectRandom() throws SQLException {
+        PreparedStatement statement =
+                conn.prepareStatement("SELECT * FROM heroku_7f0a8e6802ba731.videos ORDER BY RAND() LIMIT 1;");
         return statement.executeQuery();
     }
 
     @Override
     public ResultSet selectAll() throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("select * from videos");
-        return statement.executeQuery();    }
+                conn.prepareStatement("select * from heroku_7f0a8e6802ba731.videos");
+        return statement.executeQuery();
+    }
 
     @Override
     public void update(String... values) {
@@ -71,7 +79,7 @@ public class DatabaseVideosImpl implements Database{
 
     public void delete(int id) throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("delete from videos where id = ?");
+                conn.prepareStatement("delete from heroku_7f0a8e6802ba731.videos where id = ?");
         statement.setInt(1, id);
         statement.executeUpdate();
     }
@@ -79,7 +87,7 @@ public class DatabaseVideosImpl implements Database{
     @Override
     public void delete(String fileID) throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("delete from videos where file_id = ?");
+                conn.prepareStatement("delete from heroku_7f0a8e6802ba731.videos where file_id = ?");
         statement.setString(1, fileID);
         statement.executeUpdate();
     }
@@ -87,7 +95,7 @@ public class DatabaseVideosImpl implements Database{
     @Override
     public int count() throws SQLException {
         ResultSet resultSet =
-                conn.createStatement().executeQuery("SELECT count(file_id) FROM videos");
+                conn.createStatement().executeQuery("SELECT count(id) FROM heroku_7f0a8e6802ba731.videos");
         resultSet.next();
         return resultSet.getInt(1);
     }

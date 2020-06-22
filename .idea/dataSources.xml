@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/test?serverTimezone=UTC</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="herokuDB" uuid="8b5199f3-05c8-4519-8a14-66a08a1784c6">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://b6fb2f3f67ee5b:62546e31@us-cdbr-east-05.cleardb.net/heroku_7f0a8e6802ba731?reconnect=true:3306</jdbc-url>
+    </data-source>
   </component>
 </project>

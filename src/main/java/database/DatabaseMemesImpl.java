@@ -27,7 +27,7 @@ public class DatabaseMemesImpl implements Database{
         Blob blob = (Blob) objects[4];
         String cid = (String) objects[5];
         PreparedStatement s = conn.prepareStatement(
-                "insert into memes (file_id, " +
+                "insert into heroku_7f0a8e6802ba731.memes (file_id, " +
                         "author_name, " +
                         "author_link, " +
                         "msg_date, " +
@@ -49,7 +49,7 @@ public class DatabaseMemesImpl implements Database{
         String v2 = values[1];
         String v3 = values[2];
         PreparedStatement s = conn.prepareStatement(
-                "insert into memes (file_id, author_name, author_link) values (?,?,?)");
+                "insert into heroku_7f0a8e6802ba731.memes (file_id, author_name, author_link) values (?,?,?)");
         s.setString(1, v1);
         s.setString(2, v2);
         s.setString(3, v3);
@@ -58,14 +58,14 @@ public class DatabaseMemesImpl implements Database{
 
     @Override
     public void insertDate(Date date) throws SQLException {
-        PreparedStatement s = conn.prepareStatement("insert into memes (msg_date) value (?)");
+        PreparedStatement s = conn.prepareStatement("insert into heroku_7f0a8e6802ba731.memes (msg_date) value (?)");
         s.setDate(1, date);
         s.executeUpdate();
     }
 
     @Override
     public void insertBlob(Blob blob) throws SQLException {
-        PreparedStatement s = conn.prepareStatement("insert into memes (file) value (?)");
+        PreparedStatement s = conn.prepareStatement("insert into heroku_7f0a8e6802ba731.memes (file) value (?)");
         s.setBlob(1, blob);
         s.executeUpdate();
     }
@@ -90,15 +90,22 @@ public class DatabaseMemesImpl implements Database{
     @Override
     public ResultSet select(int id) throws SQLException{
         PreparedStatement statement =
-                conn.prepareStatement("select * from memes where id = ?");
+                conn.prepareStatement("select * from heroku_7f0a8e6802ba731.memes where id = ?");
         statement.setInt(1, id);
+        return statement.executeQuery();
+    }
+
+    @Override
+    public ResultSet selectRandom() throws SQLException {
+        PreparedStatement statement =
+                conn.prepareStatement("SELECT * FROM heroku_7f0a8e6802ba731.memes ORDER BY RAND() LIMIT 1;");
         return statement.executeQuery();
     }
 
     @Override
     public ResultSet selectAll() throws SQLException{
         PreparedStatement statement =
-                conn.prepareStatement("select * from memes");
+                conn.prepareStatement("select * from heroku_7f0a8e6802ba731.memes");
         return statement.executeQuery();
     }
 
@@ -109,7 +116,7 @@ public class DatabaseMemesImpl implements Database{
 
     public void delete(int id) throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("delete from memes where id = ?");
+                conn.prepareStatement("delete from heroku_7f0a8e6802ba731.memes where id = ?");
         statement.setInt(1, id);
         statement.executeUpdate();
     }
@@ -117,7 +124,7 @@ public class DatabaseMemesImpl implements Database{
     @Override
     public void delete(String fileID) throws SQLException {
         PreparedStatement statement =
-                conn.prepareStatement("delete from memes where file_id = ?");
+                conn.prepareStatement("delete from heroku_7f0a8e6802ba731.memes where file_id = ?");
         statement.setString(1, fileID);
         statement.executeUpdate();
     }
@@ -125,7 +132,7 @@ public class DatabaseMemesImpl implements Database{
     @Override
     public int count() throws SQLException {
         ResultSet resultSet =
-                conn.createStatement().executeQuery("SELECT count(file_id) FROM memes");
+                conn.createStatement().executeQuery("SELECT count(id) FROM heroku_7f0a8e6802ba731.memes");
         resultSet.next();
         return resultSet.getInt(1);
     }
